@@ -21,12 +21,12 @@ From the project's root folder run:
 $ ./docker-build.sh Main.java
 $ docker run java_app
 ```
-For bulding a simple applicaiton residing in the project root, together with a manifest.txt in the same folder, or:
+For building a simple application residing in the project root, together with a manifest.txt in the same folder, or:
  
  ```bash
  $ ./docker-build.sh -s ./src -p com.custom_docker_context -m ./src/manifest_w_package.txt Main.java
  ```
-For a project where the main *.java is located in a sub path as well as the mainfest file, omitting -m will have the script look for mainfest.txt in the project's root path.
+For a project where the main `*.java` is located in a sub path as well as the manifest file, omitting `-m` will have the script look for manifest.txt in the project's root path.
 
 ```bash
 $ ./docker-build.sh -h
